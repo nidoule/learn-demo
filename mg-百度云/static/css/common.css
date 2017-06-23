@@ -1,0 +1,155 @@
+
+html,body {
+    background: #fff;
+    color:#000;
+}
+/*定义宽度100%*/
+html,body {
+	width: 100%;
+}
+
+
+/*body相对定位*/
+body {
+	position: relative;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family:  "Microsoft Yahei",Verdana, "Lantinghei SC", "Hiragino Sans GB", Helvetica, arial, \5b8b\4f53, sans-serif
+
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*清除列表默认样式*/
+ul,li {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+abbr,
+acronym {
+    border: none;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+    *font-size: 100%;
+}
+
+legend {
+    color: #000;
+}
+
+del,
+ins {
+    text-decoration: none;
+}
+
+small {
+    font-size: 100%;
+}
+
+/*清除输入框外框样式*/
+input {
+	outline:none;
+    border:none;
+}
+
+html,body{
+    height: 100%;
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url('../font/iconfont.woff');
+}
+
+/*==============================
+common.end
+================================= */
+

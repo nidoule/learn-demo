@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/manage.css">
+    <link rel="stylesheet" href="static/css/font.css">
+</head>
+
+<body>
+    <div class="left-side">
+        <div class="logo">
+            <img src="static/images/logo.png" alt="">
+        </div>
+        <ul class="menu-root">
+            <li class="item-first">
+                <a href="javascript:;">
+                    <i class="icon icon-overview icon-color"></i>
+                    <span>总览</span>
+                </a>
+            </li>
+            <p class="sidebar-divider"></p>
+            <li class="product-l">
+                <a href="javascript:;">
+                    <span class="product-fuwu">产品服务</span>
+                    <i class="icon icon-arrow-right"></i>
+                </a>
+                <div class="sub-menu">
+                    <div>
+                        <div class="sub-nav-section">
+                            <h3>计算机和网络</h3>
+                            <ul>
+                                <li><a href="javascript:;"><i class="icon icon-bcc"></i><span>云服务器 BCC</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-dcc"></i><span>专属服务器 DCC</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-bae"></i><span>应用引擎 BAE</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-eip"></i><span>弹性公网IP EIP</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-blb"></i><span>负载均衡 BLB</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-network"></i><span>私有网络 VPC</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-nav-section">
+                            <h3>存储和CDN</h3>
+                            <ul>
+                                <li><a href="javascript:;"><i class="icon icon-bos"></i><span>对象存储 BOS</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-cds"></i><span>云磁盘 CDS</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-cdn"></i><span>内容分发网络 CDN</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-di"></i><span>数据导入 Date Import</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-nav-section">
+                            <h3>数据库</h3>
+                            <ul>
+                                <li><a href="javascript:;"><i class="icon icon-rds"></i><span>关系型数据库 RDS</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-scs"></i><span>简单缓存服务 SCS</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-nav-section">
+                            <h3>安全和管理</h3>
+                            <ul>
+                                <li><a href="javascript:;"><i class="icon icon-bss"></i><span>云安全 BSS</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-ddos"></i><span>DDoS防护服务</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-bcm"></i><span>云监控 BCM</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-cas"></i><span>SSL证书服务</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-nav-section">
+                            <h3>数据分析</h3>
+                            <ul>
+                                <li><a href="javascript:;"><i class="icon icon-bmr"></i><span>百度MapReduce BMR</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-bdl"></i><span>百度深度学习</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-palo"></i><span>百度OLA引擎 Palo</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-bes"></i><span>百度Elasticsearch</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-kafka"></i><span>百度Kafka</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-nav-section">
+                            <h3>智能多媒体服务</h3>
+                            <ul>
+                                <li><a href="javascript:;"><i class="icon icon-mct"></i><span>音视频转码 MCT</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-lss"></i><span>音视频直播 LSS</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-vod"></i><span>音视频点播 VOD</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-doc"></i><span>文档服务 DOC</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-nav-section">
+                            <h3>物联网服务</h3>
+                            <ul>
+                                <li><a href="javascript:;"><i class="icon icon-iot"></i><span>物接入 loT Hub</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-modbus"></i><span>物解析 loT Parser</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-iotdm"></i><span>物管理 loT Device</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-tsdb"></i><span>临时数据库 TSDB</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-iotre"></i><span>规则引擎 Rule Engine</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-nav-section">
+                            <h3>人工智能</h3>
+                            <ul>
+                                <li><a href="javascript:;"><i class="icon icon-sr"></i><span>百度语音</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-face"></i><span>人脸识别</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-ocr"></i><span>文字识别</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-nlp"></i><span>自然语言处理</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-antiporn"></i><span>黄反识别</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-nav-section">
+                            <h3>应用服务</h3>
+                            <ul>
+                                <li><a href="javascript:;"><i class="icon icon-ses"></i><span>简单邮件服务 SES</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-sms"></i><span>简单消息服务 SMS</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-apm"></i><span>应用性能管理服务 APM</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-qss"></i><span>问卷调研服务</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-mat"></i><span>移动App测试服务</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-mkt"></i><span>云市场</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-nav-section">
+                            <h3>网站服务</h3>
+                            <ul>
+                                <li><a href="javascript:;"><i class="icon icon-wmt"></i><span>站点管理</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-bcd"></i><span>域名服务</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-bch"></i><span>云虚拟逐级 BCH</span></a></li>
+                                <li><a href="javascript:;"><i class="icon icon-beian"></i><span>备案服务</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <i class="icon icon-bcc icon-color"></i>
+                    <span>云服务器 BCC</span>
+                </a>
+            </li>
+            <li><a href="javascript:;"><i class="icon icon-cdn icon-color"></i><span>内容分发网络 CDN</span></a></li>
+            <li><a href="javascript:;"><i class="icon icon-bos icon-color"></i><span>对象存储 BOS</span></a></li>
+            <li><a href="javascript:;"><i class="icon icon-lss icon-color"></i><span>音视频直播 LSS</span></a></li>
+            <li><a href="javascript:;"><i class="icon icon-rds icon-color"></i><span>关系型数据库 RDS</span></a></li>
+            <li><a href="javascript:;"><i class="icon icon-bmr icon-color"></i><span>百度MapReduce BMR</span></a></li>
+            <li><a href="javascript:;"><i class="icon icon-vod icon-color"></i><span>音视频点播 VOD</span></a></li>
+            <li><a href="javascript:;"><i class="icon icon-bae icon-color"></i><span>应用引擎 BAE</span></a></li>
+            <p class="sidebar-divider"></p>
+            <li><a href="javascript:;"><i class="icon icon-finance icon-color"></i><span>财务中心</span></a></li>
+            <li><a href="javascript:;"><i class="icon icon-iam-user icon-color"></i><span>多用户访问控制</span></a></li>
+        </ul>
+
+        <a class="toggle-btn"><i class="icon icon-collapse1"></i></a>
+    </div>
+    <div class="content">
+        <!-- 在这里添加代码-->
+         <!-- cyl-->
+        <div class="row box-wrapper">
+            <div class="col-xs-4 ">
+                <div class="box">
+                    <div class="top">
+                        <div class="wrap">
+                            <div class="user-info">
+                                <i class="user"></i>
+                                <a class="telnum">188******68</a>
+                                <a class="item l-user">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                </a>
+                                <a class="item">
+                                    <i class="glyphicon glyphicon-phone"></i>
+                                </a>
+                                <a class="item">
+                                    <i class="glyphicon glyphicon-envelope"></i>
+                                </a>
+                            </div>
+                            <div class="cash">
+                                <div class="cash-item cash-t">
+                                    <span>现金余额：</span>
+                                    <span class="money">￥</span>
+                                    <a class="num">0</a>
+                                    <a class="btn">充值</a>
+                                </div>
+                                <div class="cash-item cash-b">
+                                    <span>可用代金劵：</span>
+                                    <a class="ky-num">0</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom container ">
+                        <div class="row font">
+                            <span class="col-md-3 container l-box">
+                                <a class="name">
+                                    <span><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <span>消息</span>
+                                </a>
+                            </span>
+                            <span class="col-md-3  container l-box">
+                                <a class="name" >
+                                    <span><i class="glyphicon glyphicon-th-list"></i></span>
+                                    <span>工单</span>
+                                </a>
+                            </span>
+                            <span class="col-md-3 container l-box">
+                                <a class="name">
+                                    <span><i class="glyphicon glyphicon-list"></i></span>
+                                    <span>订单管理</span>
+                                </a>
+                            </span>
+                            <span class="col-md-3 container l-box">
+                                <a class="name">
+                                    <span><i class="glyphicon glyphicon-tint"></i></span>
+                                    <span>续费管理</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4  ">
+                <div class="box">
+                    <div class="title">
+                        <span class="tit">账单预览</span>
+                        <div class="date">
+                            <span>本月  2017-04-01 - 2017-04-13</span>
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <div class="img">
+                            <img src="static/images/account1.png">
+                        </div>
+                        <div class="left">
+                            <div class="_money">
+                                <p class="money">消费金额</p>
+                                <p class="_num">
+                                    <span class="ico">￥</span>
+                                    <span class="num">0.00</span>
+                                </p>
+                            </div>
+                            <p class="account-detail">
+                                <a>
+                                    <span>
+                                        <i class="glyphicon glyphicon-menu-right"></i>
+                                    </span>
+                                    <span>查看详情</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4 ">
+                <div class="box">
+                    <div class="section ">
+                        <a class="product-name">
+                            <i></i>
+                            <b>云监控</b>
+                        </a>
+                        <div class="product-spec">
+                            <a class="spec-row " style="border-top:none;">
+                                <span class="spec-key">
+                                    <i class="normal"></i>
+                                    正常
+                                </span>
+                                <span class="spec-value">0</span>
+                            </a>
+                            <a class="spec-row">
+                                <span class="spec-key">
+                                    <i class="warn"></i>
+                                    数据不足
+                                </span>
+                                <span class="spec-value">0</span>
+                            </a>
+                            <a class="spec-row">
+                                <span class="spec-key">
+                                    <i class="error"></i>
+                                    异常
+                                </span>
+                                <span class="spec-value">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <a class="product-name">
+                            <i></i>
+                            <b>云安全</b>
+                        </a>
+                        <a class="safe">
+                            <span class="sf-name">安全等级</span>
+                            <span class="safe-level">高</span>
+                            <div class="lev-wrap">
+                                <div class="inner"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 胡风 -->
+        <div class="index-overview">
+            <div class="pro-wrap active" id="active">
+                <h2 class="Title">
+                    <i class="iconfont icon-ok active-icon"></i>
+                    <span>已开通服务</span>
+                </h2>
+                <div class="product-row">
+                    <div class="product">
+                        <a href="/tsdb/?_=1492130719567#/tsdb/list" class="product-name" title="时序数据库">
+                            <i class="iconfont icon-tsdb"></i>
+                            <b>时序数据库</b>
+                        </a>
+                        <div class="product-spec ui-ctrl ui-panel" data-ui-type="Panel" data-ui-id="tsdbSpec" id="ctrl-n-tsdbSpec" data-ctrl-id="tsdbSpec" data-ctrl-view-context="n">
+                            <a data-ui-type="Link" data-ui-product-type="tsdb" data-ui-region="gz" data-ui-group="tsdbSpec" href="javascript:void(0)" class="spec-row-1 ui-ctrl ui-link" id="ctrl-n-esui8785941" data-ctrl-id="esui8785941" data-ctrl-view-context="n" target="">
+                                <span class="spec-key">
+                                <i class="iconfont icon-info"></i>
+                                <span class="region-name">华南 - 广州</span> 数据库总数</span>
+                                <span class="spec-value">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <a href="/iotre/?_=1492130719567#/iotre/rule/list" class="product-name" title="规则引擎 Rule Engine">
+                            <i class="iconfont icon-iotre"></i>
+                            <b>规则引擎 Rule Engine</b>
+                        </a>
+                        <div class="product-spec ui-ctrl ui-panel" data-ui-type="Panel" data-ui-id="iotreSpec" id="ctrl-n-iotreSpec" data-ctrl-id="iotreSpec" data-ctrl-view-context="n">
+                            <a data-ui-type="Link" data-ui-product-type="iotre" data-ui-region="gz" data-ui-group="iotreSpec" href="javascript:void(0)" class="spec-row-1 ui-ctrl ui-link" id="ctrl-n-esui8785933" data-ctrl-id="esui8785933" data-ctrl-view-context="n" target="">
+                                <span class="spec-key"><i class="iconfont icon-info"></i><span class="region-name">华南 - 广州</span> 规则总数</span>
+                                <span class="spec-value">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <a href="/iot/?_=1492130719567#/iot/modbus/manage" class="product-name" title="物解析 IoT Parser">
+                            <i class="iconfont icon-modbus"></i>
+                            <b>物解析 IoT Parser</b>
+                        </a>
+                        <div class="product-spec ui-ctrl ui-panel" data-ui-type="Panel" data-ui-id="modbusSpec" id="ctrl-n-modbusSpec" data-ctrl-id="modbusSpec" data-ctrl-view-context="n">
+                            <a data-ui-type="Link" data-ui-product-type="modbus" data-ui-region="gz" data-ui-group="modbusSpec" href="javascript:void(0)" class="spec-row-1 ui-ctrl ui-link" id="ctrl-n-esui8785937" data-ctrl-id="esui8785937" data-ctrl-view-context="n" target="">
+                                <span class="spec-key"><i class="iconfont icon-info"></i><span class="region-name">华南 - 广州</span> 设备数</span>
+                                <span class="spec-value">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product">
+                        <a href="/iotdm/?_=1492130719567#/iotdm/device/list" class="product-name" title="物管理 IoT Device">
+                            <i class="iconfont icon-iotdm"></i>
+                            <b>物管理 IoT Device</b>
+                        </a>
+                        <div class="product-spec ui-ctrl ui-panel" data-ui-type="Panel" data-ui-id="iotdmSpec" id="ctrl-n-iotdmSpec" data-ctrl-id="iotdmSpec" data-ctrl-view-context="n">
+                            <a data-ui-type="Link" data-ui-product-type="iotdm" data-ui-region="gz" data-ui-group="iotdmSpec" href="javascript:void(0)" class="spec-row-1 ui-ctrl ui-link" id="ctrl-n-esui8785935" data-ctrl-id="esui8785935" data-ctrl-view-context="n" target="">
+                                <span class="spec-key"><i class="iconfont icon-info"></i><span class="region-name">华南 - 广州</span> 设备数</span>
+                                <span class="spec-value">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <a href="/mkt/?_=1492130719567#/mkt/purchased/list" class="product-name" title="云市场">
+                            <i class="iconfont icon-mkt"></i>
+                            <b>云市场</b>
+                        </a>
+                        <div class="product-spec ui-ctrl ui-panel" data-ui-type="Panel" data-ui-id="mktSpec" id="ctrl-n-mktSpec" data-ctrl-id="mktSpec" data-ctrl-view-context="n">
+                            <a data-ui-type="Link" data-ui-product-type="mkt" data-ui-region="global" data-ui-group="mktSpec" href="javascript:void(0)" class="spec-row-1 ui-ctrl ui-link" id="ctrl-n-esui8785939" data-ctrl-id="esui8785939" data-ctrl-view-context="n" target="">
+                                <span class="spec-key"><i class="iconfont icon-info"></i><span class="region-name">全局</span> 服务总数</span>
+                                <span class="spec-value">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <a href="/ai/?_=1492130719567#/ai/speech/overview/index" class="product-name" title="百度语音">
+                            <i class="iconfont icon-sr"></i>
+                            <b>百度语音</b>
+                        </a>
+                        <div class="product-spec ui-ctrl ui-panel" data-ui-type="Panel" data-ui-id="speechSpec" id="ctrl-n-speechSpec" data-ctrl-id="speechSpec" data-ctrl-view-context="n">
+                            <a href="/ai/?_=1492130719567#/ai/speech/overview/index" class="spec-row">
+                                <div class="spec-row-1">
+                                    <span class="spec-key">
+            
+                                    <i class="iconfont icon-info"></i>
+            
+                                    &nbsp;应用数
+                                    </span>
+                                    <span class="spec-value">0</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product">
+                        <a href="/ai/?_=1492130719567#/ai/ocr/overview/index" class="product-name" title="文字识别">
+                            <i class="iconfont icon-ocr"></i>
+                            <b>文字识别</b>
+                        </a>
+                        <div class="product-spec ui-ctrl ui-panel" data-ui-type="Panel" data-ui-id="ocrSpec" id="ctrl-n-ocrSpec" data-ctrl-id="ocrSpec" data-ctrl-view-context="n">
+                            <a href="/ai/?_=1492130719567#/ai/ocr/overview/index" class="spec-row">
+                                <div class="spec-row-1">
+                                    <span class="spec-key">
+            
+                            <i class="iconfont icon-info"></i>
+            
+                            &nbsp;应用数
+                            </span>
+                                    <span class="spec-value">0</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <a href="/ai/?_=1492130719567#/ai/face/overview/index" class="product-name" title="人脸识别">
+                            <i class="iconfont icon-antiporn"></i>
+                            <b>人脸识别</b>
+                        </a>
+                        <div class="product-spec ui-ctrl ui-panel" data-ui-type="Panel" data-ui-id="faceSpec" id="ctrl-n-faceSpec" data-ctrl-id="faceSpec" data-ctrl-view-context="n">
+                            <a href="/ai/?_=1492130719567#/ai/face/overview/index" class="spec-row">
+                                <div class="spec-row-1">
+                                    <span class="spec-key">
+            
+                        <i class="iconfont icon-info"></i>
+            
+                         &nbsp;应用数
+                        </span>
+                                    <span class="spec-value">0</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <a href="/ai/?_=1492130719567#/ai/nlp/overview/index" class="product-name" title="自然语言处理">
+                            <i class="iconfont icon-nlp"></i>
+                            <b>自然语言处理</b>
+                        </a>
+                        <div class="product-spec ui-ctrl ui-panel" data-ui-type="Panel" data-ui-id="nlpSpec" id="ctrl-n-nlpSpec" data-ctrl-id="nlpSpec" data-ctrl-view-context="n">
+                            <a href="/ai/?_=1492130719567#/ai/nlp/overview/index" class="spec-row">
+                                <div class="spec-row-1">
+                                    <span class="spec-key">
+            
+                                <i class="iconfont icon-info"></i>
+            
+                             &nbsp;应用数
+                             </span>
+                                    <span class="spec-value">0</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product">
+                        <a href="/ai/?_=1492130719567#/ai/antiporn/overview/index" class="product-name" title="黄反识别">
+                            <i class="iconfont icon-antiporn"></i>
+                            <b>黄反识别</b>
+                        </a>
+                        <div class="product-spec ui-ctrl ui-panel" data-ui-type="Panel" data-ui-id="antipornSpec" id="ctrl-n-antipornSpec" data-ctrl-id="antipornSpec" data-ctrl-view-context="n">
+                            <a href="/ai/?_=1492130719567#/ai/antiporn/overview/index" class="spec-row">
+                                <div class="spec-row-1">
+                                    <span class="spec-key">
+            
+                        <i class="iconfont icon-info"></i>
+            
+                     &nbsp;应用数
+                          </span>
+                                          <span class="spec-value">0</span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cyl -->
+
+        <!-- 丁铭 -->
+        <div class="deactive">
+            <h2>
+                <i class="iconfont icon-waiting"></i>
+                <span>未开通服务</span>
+            </h2>
+            <div class="deactive-table-wrap">
+                <div class="product-row">
+                    <div class="product">
+                        <h3>计算和网络</h3>
+                        <div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-bcc"></i>
+                                    云服务器
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-bae"></i>
+                                    应用引擎BAE 专业版
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-bae"></i>
+                                    应用引擎BAE 基础版
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-eip"></i>
+                                    弹性公网IP
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-blb"></i>
+                                    负载均衡
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <h3>存储和CDN</h3>
+                        <div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-bos"></i>
+                                    对象存储
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    开通
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-cds"></i>
+                                    云磁盘
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-cdn"></i>
+                                    内容分发网络
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    开通
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <h3>数据库</h3>
+                        <div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-rds"></i>
+                                    关系型数据库
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-scs"></i>
+                                    简单缓存服务
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product">
+                        <h3>数据分析</h3>
+                        <div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-bcc"></i>
+                                    云服务器
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-bae"></i>
+                                    应用引擎BAE 专业版
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-bae"></i>
+                                    应用引擎BAE 基础版
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-blb"></i>
+                                    负载均衡
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <h3>智能多媒体服务</h3>
+                        <div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-bos"></i>
+                                    对象存储
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    开通
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-cds"></i>
+                                    云磁盘
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-cdn"></i>
+                                    内容分发网络
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    开通
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <h3>物联网服务</h3>
+                        <div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-rds"></i>
+                                    关系型数据库
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-scs"></i>
+                                    简单缓存服务
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product">
+                        <h3>应用服务</h3>
+                        <div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-bcc"></i>
+                                    云服务器
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-blb"></i>
+                                    负载均衡
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-bos"></i>
+                                    对象存储
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    开通
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-cds"></i>
+                                    云磁盘
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <h3>网站服务</h3>
+                        <div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-cds"></i>
+                                    云磁盘
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    购买
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                            <div class="product-inner-row">
+                                <a href="javascript:;" class="un-product-name">
+                                    <i class="iconfont icon-cdn"></i>
+                                    内容分发网络
+                                </a>
+                                <span class="product-links">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-buy"></i>
+                                    开通
+                                </a>
+                                <span>|</span>
+                                <a href="javascript:;">详情</a>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-nav">
+        <div class="region-global">
+            <i class="icon global-icon"></i>
+            全局
+            <i class="icon select-icon"></i>
+        </div>
+        <div class="top-menu">
+            <ul>
+                <li><i class="icon search-icon"></i></li>
+                <li><i class="icon icon-ticket"></i></li>
+                <li><i class="icon icon-msg"></i></li>
+                <li><i class="icon icon-help"></i></li>
+                <li><i class="icon search-icon"></i></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="src/jquery.js"></script>
+    <script src="src/main.js"></script>
+
+</body>
+
+</html>
